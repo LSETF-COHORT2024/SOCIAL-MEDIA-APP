@@ -9,8 +9,13 @@ import {
   Container,
   VStack,
 } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate("/");
+  };
   return (
     <div>
       <Container maxW="390px">
@@ -30,6 +35,7 @@ const LoginPage = () => {
                 bgGradient:
                   "linear(to right, rgba(255, 0, 229, 1), rgba(255, 0, 0, 1))",
               }}
+              onClick={handleLogin}
             >
               Login
             </Button>
