@@ -1,21 +1,22 @@
 import PostFooter from "./PostFooter";
 import PostHeader from "./PostHeader";
 import { Box, Image } from "@chakra-ui/react";
-const FeedPost = () => {
+const FeedPost = ({ img, username, avatar, comments, location }) => {
   return (
     <Box bg={"white"} borderRadius={30}>
-      <PostHeader />
+      <PostHeader username={username} avatar={avatar} location={location} />
       <Box>
         <Image
-          src="https://res.cloudinary.com/dciu77c43/image/upload/v1702477498/cld-sample-5.jpg"
-          alt="Userpost"
+          src={img}
+          alt={username}
           borderRadius={40}
+          overflow={"hidden"}
           paddingBottom={5}
           paddingLeft={5}
           paddingRight={5}
         />
       </Box>
-      <PostFooter />
+      <PostFooter comments={comments} />
     </Box>
   );
 };

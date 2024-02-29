@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
         pathname !== "/authpasswordpage" &&
         pathname !== "/completeauth" &&
         pathname !== "/loginpage" && (
-          <Box>
+          <Box height={"80px"} as="footer" position="fixed" bottom="0">
             <Homepage_footer />
           </Box>
         )}
