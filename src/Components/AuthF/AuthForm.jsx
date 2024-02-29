@@ -15,6 +15,7 @@ const AuthForm = () => {
     }
     navigate("/authpasswordpage");
   };
+
   return (
     <div>
       <Container
