@@ -3,7 +3,7 @@ import { AiOutlineDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { PiDotsThreeVertical } from "react-icons/pi";
 
-const PostHeader = () => {
+const PostHeader = ({ username, avatar, location }) => {
   return (
     <>
       <Flex
@@ -13,10 +13,10 @@ const PostHeader = () => {
         my={2}
       >
         <Flex alignItems={"center"} gap={2}>
-          <Avatar src="https://bit.ly/kent-c-dodds" alt="user profile pic" />
+          <Avatar src={avatar} alt={username} />
           <VStack fontSize={12} fontWeight={"bold"}>
-            <Text>David William</Text>
-            <Text>3h,Los Angeles</Text>
+            <Text>{username}</Text>
+            <Text>{location}</Text>
           </VStack>
         </Flex>
         <Box paddingRight={3}>
