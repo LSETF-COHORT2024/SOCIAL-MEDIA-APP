@@ -30,6 +30,7 @@ const AuthForm = () => {
 
             <h1>Choose Username</h1>
             <p>You can always do it later</p>
+
             <Input
               placeholder="Username"
               fontSize={14}
@@ -39,6 +40,7 @@ const AuthForm = () => {
                 setInputs({ ...inputs, Username: e.target.value })
               }
             />
+
             <Button onClick={handleAuth}>Next</Button>
             <hr />
             <p>English[United Kingdom]</p>
