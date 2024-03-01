@@ -1,7 +1,12 @@
-import React from "react";
-import { Box, Image, Input, Button, Container, VStack } from "@chakra-ui/react";
+import { Box, Image, Button, Container, VStack } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 const CompleteAuthPage = () => {
+  const navigate = useNavigate();
+  const handleSignup = () => {
+    navigate("/loginpage");
+  };
+
   return (
     <div>
       <Container
@@ -24,6 +29,7 @@ const CompleteAuthPage = () => {
                 bgGradient:
                   "linear(to right, rgba(255, 0, 229, 1), rgba(255, 0, 0, 1))",
               }}
+              onClick={handleSignup}
             >
               Complete SignUp
             </Button>
