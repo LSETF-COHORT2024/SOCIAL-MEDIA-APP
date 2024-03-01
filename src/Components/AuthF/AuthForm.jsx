@@ -1,6 +1,15 @@
 // import React from "react";
 import { useState } from "react";
-import { Box, Image, Input, Button, Container, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Input,
+  Button,
+  Container,
+  VStack,
+  FormControl,
+  FormErrorMessage,
+} from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const AuthForm = () => {
@@ -30,16 +39,30 @@ const AuthForm = () => {
 
             <h1>Choose Username</h1>
             <p>You can always do it later</p>
-            <Input
-              placeholder="Username"
-              fontSize={14}
-              type="text"
-              value={inputs.Username}
-              onChange={(e) =>
-                setInputs({ ...inputs, Username: e.target.value })
-              }
-            />
-            <Button onClick={handleAuth}>Next</Button>
+
+            <form onSubmit={() => {}}>
+              <FormControl isInvalid={false}>
+                <Input
+                  placeholder="Email"
+                  fontSize={14}
+                  type="email"
+                  value={inputs.Username}
+                  onChange={(e) =>
+                    setInputs({ ...inputs, Username: e.target.value })
+                  }
+                />
+                <FormErrorMessage>The E-mail is not valid</FormErrorMessage>
+              </FormControl>
+            </form>
+            <Button
+              isLoading={false}
+              loadingText="Next"
+              width={"full"}
+              type="submit"
+              onClick={handleAuth}
+            >
+              Next
+            </Button>
             <hr />
             <p>English[United Kingdom]</p>
           </VStack>
