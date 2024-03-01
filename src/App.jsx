@@ -4,11 +4,6 @@ import AuthPage from "./pages/HomePage/Auth/AuthPage";
 import AuthPasswordPage from "./pages/HomePage/Auth/AuthPasswordPage";
 import CompleteAuthPage from "./pages/HomePage/Auth/CompleteAuthPage";
 import LoginPage from "./pages/HomePage/Auth/LoginPage";
-import Layout from "./pages/HomePage/Layout";
-import NotificationPage from "./pages/NotificationPage";
-import UploadPage from "./pages/UploadPage";
-import ProfilePage from "./pages/ProfilePage";
-import SearchPage from "./pages/SearchPage";
 
 function App() {
   return (
@@ -19,10 +14,6 @@ function App() {
         <Route path="/authpasswordpage" element={<AuthPasswordPage />} />
         <Route path="/completeauth" element={<CompleteAuthPage />} />
         <Route path="/loginpage" element={<LoginPage />} />
-        <Route path="/searchpage" element={<SearchPage />} />
-        <Route path="/uploadpage" element={<UploadPage />} />
-        <Route path="/notification" element={<NotificationPage />} />
-        <Route path="/profilepage" element={<ProfilePage />} />
       </Routes>
     </Layout>
   );
