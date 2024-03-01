@@ -1,7 +1,16 @@
-import React from "react";
 import { Box, Image, Input, Button, Container, VStack } from "@chakra-ui/react";
-
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 const AuthPasswordForm = () => {
+  const navigate = useNavigate();
+  const [inputs, setInputs] = useState({ Password: "" });
+
+  const handlePassword = () => {
+    if (!inputs.Password) {
+      alert("Please fill all the fields");
+    }
+    navigate("/completeauth");
+  };
   return (
     <div>
       <div>
@@ -17,7 +26,15 @@ const AuthPasswordForm = () => {
 
               <h1>Create a password</h1>
               <p>For security, your password must be 6 characters or more.</p>
-              <Input placeholder="Password" fontSize={14} type="password" />
+              <Input
+                placeholder="Password"
+                fontSize={14}
+                type="password"
+                value={inputs.Password}
+                onChange={(e) =>
+                  setInputs({ ...inputs, Password: e.target.value })
+                }
+              />
               <Button
                 w={"full"}
                 bgGradient="linear(to right, rgba(255, 0, 229, 1), rgba(255, 0, 0, 1))"
@@ -26,6 +43,7 @@ const AuthPasswordForm = () => {
                   bgGradient:
                     "linear(to right, rgba(255, 0, 229, 1), rgba(255, 0, 0, 1))",
                 }}
+                onClick={handlePassword}
               >
                 Next
               </Button>

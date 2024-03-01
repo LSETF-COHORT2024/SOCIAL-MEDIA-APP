@@ -1,15 +1,17 @@
 import React from "react";
-import Footer from "../../Components/Navigation/Footer";
-import Header from "../../Components/Navigation/Header";
 
-const HomePage = () => {
+const Homepage = () => {
   return (
-    <div>
-      MyHome
-      <Header />
-      <Footer />
-    </div>
+    <Container bg={"#f4f8fb"}>
+      <Box>
+        <Homepage_header />
+      </Box>
+
+      <Avatars />
+
+      <Feedposts />
+    </Container>
   );
 };
 
-export default HomePage;
+export default Homepage;
