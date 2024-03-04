@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { PiPencilSimple } from "react-icons/pi";
+import DropDown from "./DropDown";
 
 const ProfileDropDown = () => {
   return (
@@ -30,14 +31,15 @@ const ProfileDropDown = () => {
             >
               <Flex justifyContent="center" alignItems="center" gx="3px">
                 <Text>profile.name</Text>
-                <IconButton
+                {/* <IconButton
                   isSuqare={true}
                   variant="solid"
                   aria-label="Done"
                   fontSize="20px"
                   bgColor="white"
                   icon={<ChevronDownIcon color="Gray.900" />}
-                />
+                /> */}{" "}
+                <DropDown />
               </Flex>
             </Box>
 
