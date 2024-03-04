@@ -7,6 +7,8 @@ import {
   Button,
   Container,
   VStack,
+  Flex,
+  Divider,
   FormControl,
   FormErrorMessage,
 } from "@chakra-ui/react";
@@ -27,12 +29,7 @@ const AuthForm = () => {
 
   return (
     <div>
-      <Container
-        maxW={"390px"}
-        align={"center"}
-        justify={"center"}
-        border={"1px solid gray"}
-      >
+      <Container maxW={"390px"} alignItems={"center"} justify={"center"}>
         <Box border={"1ps solid gray"} padding={5}>
           <VStack spacing={4}>
             <Image src="https://res.cloudinary.com/dktrwqio1/image/upload/v1708892258/picspile/Picspile_asn403.png" />
@@ -40,7 +37,7 @@ const AuthForm = () => {
             <h1>Choose Username</h1>
             <p>You can always do it later</p>
 
-            <form onSubmit={() => {}}>
+            <form onSubmit={() => {}} marginTop={"50px"}>
               <FormControl isInvalid={false}>
                 <Input
                   placeholder="Email"
@@ -55,6 +52,13 @@ const AuthForm = () => {
               </FormControl>
             </form>
             <Button
+              w={"full"}
+              bgGradient="linear(to right, rgba(255, 0, 229, 1), rgba(255, 0, 0, 1))"
+              color="white"
+              _hover={{
+                bgGradient:
+                  "linear(to right, rgba(255, 0, 229, 1), rgba(255, 0, 0, 1))",
+              }}
               isLoading={false}
               loadingText="Next"
               width={"full"}
@@ -63,8 +67,12 @@ const AuthForm = () => {
             >
               Next
             </Button>
-            <hr />
-            <p>English[United Kingdom]</p>
+            <Divider orientation="horizontal" marginTop={"230px"} />
+            <Box>
+              <Flex alignSelf="flex-end">
+                <p>English[United Kingdom]</p>
+              </Flex>
+            </Box>
           </VStack>
         </Box>
       </Container>

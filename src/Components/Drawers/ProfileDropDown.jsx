@@ -30,7 +30,7 @@ const ProfileDropDown = () => {
               px="10px"
             >
               <Flex justifyContent="center" alignItems="center" gx="3px">
-                <Text>profile.name</Text>
+                <Text fontSize="12">profile.name</Text>
                 {/* <IconButton
                   isSuqare={true}
                   variant="solid"
@@ -47,9 +47,9 @@ const ProfileDropDown = () => {
           </Flex>
 
           <Stack>
-            <Box position="relative" display="inline-block">
+            <Box position="relative" display="inline-block" my="20px">
               <Flex justifyContent="center">
-                <Avatar name="Profile Picture" size="2xl" />
+                <Avatar name="Profile Picture" size="xl" />
 
                 <IconButton
                   isRound={true}

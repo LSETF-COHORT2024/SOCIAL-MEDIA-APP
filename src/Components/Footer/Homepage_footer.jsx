@@ -1,8 +1,11 @@
 import { Flex, Box, Link, Avatar, Wrap, WrapItem } from "@chakra-ui/react";
+
 import { GrHomeRounded } from "react-icons/gr";
 import { LuGlobe } from "react-icons/lu";
 import { GoHeart } from "react-icons/go";
 import { Link as RouterLink } from "react-router-dom";
+import PostButton from "../PostButton";
+
 const Homepage_footer = () => {
   return (
     <Box
@@ -35,10 +38,19 @@ const Homepage_footer = () => {
           <LuGlobe size={40} />
         </Link>
 
-        <img
-          src="https://res.cloudinary.com/dciu77c43/image/upload/v1708963697/Add_Plus_Circle_rkppm2.png"
-          alt=""
-        />
+        {/* <IconButton
+          isRound={true}
+          variant="solid"
+          colorScheme="white"
+          aria-label="Done"
+          fontSize="20px"
+          bgGradient={
+            "linear(to right, rgba(255, 0, 229, 1), rgba(255, 0, 0, 1))"
+          }
+          icon={<Icon as={IoMdAdd} color="white" />}
+        /> */}
+
+        <PostButton />
 
         <Link to={"/NotificationPage"} as={RouterLink} cursor={"pointer"}>
           <GoHeart size={40} />

@@ -24,6 +24,7 @@ const PostFooter = ({ comments }) => {
     <Box>
       <VStack>
         <Flex
+          justifyContent="start"
           alignItems={"center"}
           gap={150}
           w={"full"}
@@ -51,9 +52,12 @@ const PostFooter = ({ comments }) => {
             </Link>
           </Box>
         </Flex>
-
-        <Text as={"span"}> {likes} likes</Text>
-
+      </VStack>
+      <VStack align="start" spacing="0" px="7" py="4px">
+        {" "}
+        <Text as={"span"} fontWeight="bold">
+          {likes} likes
+        </Text>
         <Text as={"span"} fontSize={"sm"} color={"gray"}>
           View all {comments} comments
         </Text>

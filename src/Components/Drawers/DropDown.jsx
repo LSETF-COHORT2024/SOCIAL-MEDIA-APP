@@ -11,7 +11,8 @@ const DropDown = () => {
         <MenuButton
           as={Button}
           bgColor="white"
-          rightIcon={<ChevronDownIcon />}
+          fontSize="12"
+          leftIcon={<ChevronDownIcon fontSize="10" />}
         ></MenuButton>
         <MenuList>
           <MenuItem>
