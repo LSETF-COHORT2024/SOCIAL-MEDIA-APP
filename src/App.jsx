@@ -10,6 +10,7 @@ import UploadPage from "./pages/UploadPage";
 import ProfilePage from "./pages/ProfilePage";
 import SearchPage from "./pages/SearchPage";
 
+
 function App() {
   return (
     <Layout>
@@ -22,7 +23,6 @@ function App() {
         <Route path="/searchpage" element={<SearchPage />} />
         <Route path="/uploadpage" element={<UploadPage />} />
         <Route path="/notification" element={<NotificationPage />} />
-        <Route path="/profilepage" element={<ProfilePage />} />
       </Routes>
     </Layout>
   );
