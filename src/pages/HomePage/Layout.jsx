@@ -1,6 +1,6 @@
 import { Container, Box } from "@chakra-ui/react";
 import Homepage_footer from "../../Components/Footer/Homepage_footer";
-import Homepage_header from "../../Components/Header/Homepage_header";
+// import Homepage_header from "../../Components/Header/Homepage_header";
 // import Homepage from "./HomePage";
 import { useLocation } from "react-router-dom";
 
