@@ -5,6 +5,7 @@ import {
   Flex,
   IconButton,
   Text,
+  Button,
   Box,
   Stack,
   Icon,
@@ -96,15 +97,23 @@ const ProfileDropDown = () => {
             <Flex justifyContent="space-around">
               <VStack>
                 <Heading>33</Heading>
-                <Text>Posts</Text>
+                <Button colorScheme="blue" variant="link">
+                  Posts
+                </Button>
               </VStack>
               <VStack>
                 <Heading>743</Heading>
-                <Text>Followers</Text>
+
+                <Button colorScheme="blue" variant="link">
+                  Followers
+                </Button>
               </VStack>
               <VStack>
                 <Heading>1,041</Heading>
-                <Text>Following</Text>
+
+                <Button colorScheme="blue" variant="link">
+                  Following
+                </Button>
               </VStack>
             </Flex>
           </Box>

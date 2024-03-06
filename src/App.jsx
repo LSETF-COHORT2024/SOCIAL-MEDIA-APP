@@ -6,6 +6,7 @@ import CompleteAuthPage from "./pages/HomePage/Auth/CompleteAuthPage";
 import LoginPage from "./pages/HomePage/Auth/LoginPage";
 import Layout from "./pages/HomePage/Layout";
 import ProfilePage from "./pages/ProfilePage";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/completeauth" element={<CompleteAuthPage />} />
         <Route path="/loginpage" element={<LoginPage />} />
         <Route path="/profilepage" element={<ProfilePage />} />
+        <Route path="/searchpage" element={<SearchPage />} />
       </Routes>
     </Layout>
   );
