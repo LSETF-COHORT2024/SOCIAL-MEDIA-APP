@@ -66,15 +66,11 @@ const AuthForm = () => {
             <p>You can always do it later</p>
 
 
-            <form onSubmit={() => {}} marginTop={"50px"}>
-              <FormControl isInvalid={false}>
-
-            <form onSubmit={handleSubmit}>
+           <form onSubmit={handleSubmit}>
               <FormControl
                 py={2}
                 isInvalid={isInvalidUsername(inputs.username)}
               >
-
                 <Input
                   placeholder="Username"
                   fontSize={14}
