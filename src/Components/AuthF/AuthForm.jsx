@@ -47,14 +47,9 @@ const AuthForm = () => {
     <div>
 
       <Container maxW={"390px"} alignItems={"center"} justify={"center"}>
-        <Box border={"1ps solid gray"} padding={5}>
+        
 
-      <Container
-        maxW={"390px"}
-        align={"center"}
-        justify={"center"}
-        border={"1px solid gray"}
-      >
+   
         <Box padding={5}>
 
           <VStack spacing={4}>
