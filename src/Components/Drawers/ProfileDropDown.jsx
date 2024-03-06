@@ -5,6 +5,7 @@ import {
   Flex,
   IconButton,
   Text,
+  Button,
   Box,
   Stack,
   Icon,
@@ -30,7 +31,7 @@ const ProfileDropDown = () => {
               px="10px"
             >
               <Flex justifyContent="center" alignItems="center" gx="3px">
-                <Text>profile.name</Text>
+                <Text fontSize="12">profile.name</Text>
                 {/* <IconButton
                   isSuqare={true}
                   variant="solid"
@@ -47,9 +48,9 @@ const ProfileDropDown = () => {
           </Flex>
 
           <Stack>
-            <Box position="relative" display="inline-block">
+            <Box position="relative" display="inline-block" my="20px">
               <Flex justifyContent="center">
-                <Avatar name="Profile Picture" size="2xl" />
+                <Avatar name="Profile Picture" size="xl" />
 
                 <IconButton
                   isRound={true}
@@ -96,15 +97,23 @@ const ProfileDropDown = () => {
             <Flex justifyContent="space-around">
               <VStack>
                 <Heading>33</Heading>
-                <Text>Posts</Text>
+                <Button colorScheme="blue" variant="link">
+                  Posts
+                </Button>
               </VStack>
               <VStack>
                 <Heading>743</Heading>
-                <Text>Followers</Text>
+
+                <Button colorScheme="blue" variant="link">
+                  Followers
+                </Button>
               </VStack>
               <VStack>
                 <Heading>1,041</Heading>
-                <Text>Following</Text>
+
+                <Button colorScheme="blue" variant="link">
+                  Following
+                </Button>
               </VStack>
             </Flex>
           </Box>
